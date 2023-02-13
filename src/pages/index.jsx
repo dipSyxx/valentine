@@ -1,3 +1,4 @@
+import { Writes } from '@/elements/Writes/Writes'
 import styles from '@/styles/Home.module.sass'
 import clsx from 'clsx'
 import { useState } from 'react'
@@ -15,6 +16,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      <Writes />
     </>
   )
 }

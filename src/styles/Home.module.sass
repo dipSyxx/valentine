@@ -22,17 +22,17 @@
   height: auto
   border-radius: 8px
   position: fixed
-  left: 50%
-  top: 50%
   transition: all 0.3s ease-in-out
   visibility: hidden
   transform: translate(-50%, -50%)
+  transform: scale(0)
   z-index: 1000
   opacity: 0
 
 .show_window
   visibility: visible
   opacity: 1
+  transform: scale(1)
 
 .wrapper
   overflow: hidden
