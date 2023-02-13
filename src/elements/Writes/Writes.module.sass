@@ -1,14 +1,13 @@
 .pages
   max-width: 1920px
-  height: 673px
+  height: 100vh
   width: 100%
+  background-color: #c33
 
 .page
   height: 100%
   width: 100%
-  display: flex
-  justify-content: center
-  align-items: center
+  padding: 20px
   user-select: none
   touch-action: none
 
@@ -20,3 +19,118 @@
 
   &3
     background-color: #c33
+
+.title
+  text-align: center
+
+.heart
+  position: relative
+  width: 100px
+  height: 90px
+  animation: heartbeat 1s infinite
+  margin: 0 auto
+  margin-bottom: 20px
+
+.heart:before,
+.heart:after
+  position: absolute
+  content: ""
+  left: 50px
+  top: 0
+  width: 50px
+  height: 80px
+  background: #fff
+  -moz-border-radius: 50px 50px 0 0
+  border-radius: 50px 50px 0 0
+  -webkit-transform: rotate(-45deg)
+  -moz-transform: rotate(-45deg)
+  -ms-transform: rotate(-45deg)
+  -o-transform: rotate(-45deg)
+  transform: rotate(-45deg)
+  -webkit-transform-origin: 0 100%
+  -moz-transform-origin: 0 100%
+  -ms-transform-origin: 0 100%
+  -o-transform-origin: 0 100%
+  transform-origin: 0 100%
+
+.heart:after
+  left: 0
+  -webkit-transform: rotate(45deg)
+  -moz-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  -o-transform: rotate(45deg)
+  transform: rotate(45deg)
+  -webkit-transform-origin: 100% 100%
+  -moz-transform-origin: 100% 100%
+  -ms-transform-origin: 100% 100%
+  -o-transform-origin: 100% 100%
+  transform-origin: 100% 100%
+
+@keyframes heartbeat
+
+  0%
+    transform: scale( .75 )
+
+  20%
+    transform: scale( 1 )
+
+  40%
+    transform: scale( .75 )
+
+  60%
+    transform: scale( 1 )
+
+  80%
+    transform: scale( .75 )
+
+  100%
+    transform: scale( .75 )
+
+.text
+  border-radius: 10px
+  padding: 10px
+  box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.75)
+  line-height: 1.6em
+  padding-bottom: 50px
+
+.heart_icon
+  margin-left: 4px
+
+.arrow
+  position: fixed
+  top: 95%
+  left: 50%
+  transform: translate(-50%, -50%)
+  transform: rotate(270deg)
+  cursor: pointer
+
+.arrow_end
+  transform: rotate(90deg)
+
+.arrow span
+  display: block
+  width: 15px
+  height: 15px
+  border-bottom: 5px solid white
+  border-right: 5px solid white
+  transform: rotate(45deg)
+  margin: -10px
+  animation: animate 2s infinite
+
+  &:nth-child(2)
+    animation-delay: -0.2s
+
+  &:nth-child(3)
+    animation-delay: -0.4s
+
+@keyframes animate
+  0%
+    opacity: 0
+    transform: rotate(45deg) translate(-20px, -20px)
+
+  50%
+    opacity: 1
+
+  100%
+    opacity: 0
+    transform: rotate(45deg) translate(20px, 20px)
