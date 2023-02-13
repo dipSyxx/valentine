@@ -117,7 +117,8 @@ export const Writes = () => {
             <div className={styles.heart}></div>
             <div className={styles.text}>
               <h1 style={{ lineHeight: '1.5em' }}>
-                Я КОХАЮ ТЕБЕ І ЗАВЖДИ БУДУ ТЕБЕ КОХАТИ ДО КІНЦЯ СВОЇХ ДНІВ МОЯ МАЛЕНЬКА ТИ КИЦІНЬКА!! цьомкаю в губки
+                Я КОХАЮ ТЕБЕ І ЗАВЖДИ БУДУ ТЕБЕ КОХАТИ ДО КІНЦЯ СВОЇХ ДНІВ МОЯ МАЛЕНЬКА ТИ КИЦІНЬКА!! цьомкаю в губки, я
+                скоро приїду до тебе лишилось ще трішки
                 <i className={clsx(styles.heart_icon, 'fa-solid fa-heart')} />
               </h1>
             </div>
