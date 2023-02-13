@@ -19,7 +19,13 @@ export const Writes = () => {
   return (
     <div>
       <div className={styles.pages}>
-        <FlippingPages direction="right-to-left" onSwipeEnd={setSelected} selected={selected}>
+        <FlippingPages
+          direction="right-to-left"
+          swipeSpeed={1000}
+          swipeLength={600}
+          onSwipeEnd={setSelected}
+          selected={selected}
+        >
           <div className={clsx(styles.page, styles.page1)}>
             <h1 className={styles.title}>З днем святого Валентина коть!</h1>
             <div className={styles.heart}></div>
